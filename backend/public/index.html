@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="heading">List Barang Gudang</h1>
+
+    <input
+        class="cari"
+        id="search"
+        type="text"
+        placeholder="Cari nama barang..."
+        oninput="searchItems()"
+    >
+
+    <div class="form">
+        <input id="name" type="text" placeholder="Nama barang">
+        <input id="qty" type="number" placeholder="Jumlah">
+        <button onclick="addItem()">Tambah</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Jumlah</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="items"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

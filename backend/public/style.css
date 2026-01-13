@@ -1,0 +1,69 @@
+body {
+    min-height: 100vh;
+    background-image: url("image/laut.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.cari {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #000;
+    vertical-align: top;
+}
+
+.cell-wrap {
+    width: 100%;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.heading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
